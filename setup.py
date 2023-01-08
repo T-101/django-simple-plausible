@@ -7,7 +7,7 @@ with codecs.open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="django_simple_plausible",
     # name="django_simple_plausible-T-101-0.0.2-3",
-    version="0.0.3",
+    version="0.0.4",
     author="T-101",
     description="A simple Django package to render Plausible Analytics html tag",
     long_description=long_description,
