@@ -8,7 +8,7 @@ A dead simple package to add Plausible Analytics html tag to your HTML. Tested w
 
 2. Add `django_simple_plausible` to your `INSTALLED_APPS` in settings.py
 
-3. ADD `PLAUSIBLE_SITES` and `PLAUSIBLE_SCRIPT_URL` keys and values to your settings.py. Without these settings, default values for Plausible will be used.
+3. ADD `PLAUSIBLE_SITES` and `PLAUSIBLE_SCRIPT_URL` keys and values to your settings.py. Or enter the corresponding values as template tag parameters, as shown below.
 ```
 ...
 

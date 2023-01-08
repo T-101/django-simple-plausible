@@ -9,9 +9,12 @@ register = template.Library()
 @register.simple_tag()
 def plausible(site_domains=None, script_url=None):
     if site_domains is None:
-        site_domains = getattr(settings, "PLAUSIBLE_SITES", "plausible.io")
+        site_domains = getattr(settings, "PLAUSIBLE_SITES", None)
     if script_url is None:
-        script_url = getattr(settings, "PLAUSIBLE_SCRIPT_URL", "https://plausible.io/js/plausible.js")
+        script_url = getattr(settings, "PLAUSIBLE_SCRIPT_URL", None)
+
+    if not site_domains or not script_url:
+        return ""
 
     attrs = {
         "data-domain": site_domains,
