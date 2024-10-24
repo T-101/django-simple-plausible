@@ -28,14 +28,19 @@ PLAUSIBLE_SCRIPT_URL = "https://example.com/js/plausible.js"
 
 ### Configuring details
 
-- PLAUSIBLE_SITES can be a comma separated list without spaces, if you want to use that feature of Plausible
+- `PLAUSIBLE_SITES` can be a comma separated list without spaces, if you want to use that feature of Plausible
 
 ```
 PLAUSIBLE_SITES = "example.com,yoursite.com"
 ```
 
+- `PLAUSIBLE_SCRIPT_ASYNC_TAG` is an optional setting. It can be used to render the script tag with the `async` attribute instead of `defer`
+
+```
+PLAUSIBLE_SCRIPT_ASYNC_TAG = True
+```
 - Systemwide settings can be overridden giving the template tag some optional parameters:
 
 ```
-{% plausible plausible_sites="mysite.com" script_url="https://mysite.com/plausible.js" %}
+{% plausible plausible_sites="mysite.com" script_url="https://mysite.com/plausible.js" async_tag=True %}
 ```
