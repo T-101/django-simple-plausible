@@ -1,6 +1,6 @@
 ## Django Simple Plausible
 
-A dead simple package to add Plausible Analytics html tag to your HTML. Tested with Python 2.7 and 3.8. Tested with Django 1.11 and 3.2.
+A dead simple package to add Plausible Analytics html tag to your HTML. Tested with Python 2.7, 3.8, and 3.12. Tested with Django 1.11, 3.2, and 5.0.
 
 ### Usage
 
